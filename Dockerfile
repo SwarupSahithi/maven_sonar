@@ -5,7 +5,8 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the jar file into the container at /app
-COPY devops-app-1.0-SNAPSHOT.jar app.jar
+COPY target/devops-app-1.0-SNAPSHOT.jar app.jar
+
 
 # Expose the port your app runs on (adjust if needed)
 EXPOSE 8080
